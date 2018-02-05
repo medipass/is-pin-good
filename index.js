@@ -3,6 +3,7 @@
 const ASCENDING_NUMBERS = '0123456789';
 
 const reverse = value => value.split('').reverse().join('');
+const isAscendingOrDescending = value => ASCENDING_NUMBERS.includes(value) || reverse(ASCENDING_NUMBERS).includes(value);
 const isRepeat = value => new RegExp(`(.)\\1{${value.length - 1}}`).test(value);
 
 module.exports = input => {
@@ -10,12 +11,5 @@ module.exports = input => {
     throw new TypeError(`Expected a string, got ${typeof input}`);
   }
 
-  if (ASCENDING_NUMBERS.includes(input) || reverse(ASCENDING_NUMBERS).includes(input)) {
-    return false;
-  }
-  if (isRepeat(input)) {
-    return false;
-  }
-
-  return true;
+  return !isAscendingOrDescending(input) && !isRepeat(input);
 };

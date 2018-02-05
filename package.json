@@ -1,0 +1,34 @@
+{
+	"name": "is-pin-good",
+	"version": "1.0.0",
+	"description": "Checks if a given pin code is secure.",
+	"license": "MIT",
+	"repository": "medipass/is-pin-good",
+	"author": {
+		"name": "jxom",
+		"email": "jakemoxey@gmail.com",
+		"url": "jxom.io"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+    "pin",
+    "secure",
+    "is",
+    "check",
+    "safe",
+    "complex"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^0.20.0",
+		"xo": "^0.18.2"
+	}
+}

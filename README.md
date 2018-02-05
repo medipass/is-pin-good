@@ -2,6 +2,7 @@
 
 > Checks if a given pin code is secure.
 
+Statistically, one third of all four digit codes can be guessed by trying just 61 distinct combinations. Don't believe us? [PIN number analysis](http://www.datagenetics.com/blog/september32012/)
 
 ## Install
 
